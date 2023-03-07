@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+p{
+    font-size: 15px;
+}
+
+.wrapper {
+    max-width: 1200px;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+
+header h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+header p {
+    color:hsl(229, 6%, 66%);
+    padding: 0 20rem;
+}
+
+main {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.left {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 2rem;
+}
+
+.right {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card h2 {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: hsl(229, 6%, 66%);
+}
+
+.image-container {
+    display: flex;
+    justify-content: right;
+}
+
+.card-line {
+    margin-top: -2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    height: 5px;
+}
+
+.supervisor .card-line{
+    background-color:hsl(180, 62%, 55%);
+}
+
+.team-builder .card-line{
+    background-color: hsl(0, 78%, 62%);
+}
+
+.karma .card-line {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.calculator .card-line {
+    background-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width:830px){
+
+    main {
+        flex-direction:column;
+        justify-content: center;
+    }
+
+    header {
+        padding-top: 1rem;
+    }
+
+    header p{
+        padding: 1rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+
+}
